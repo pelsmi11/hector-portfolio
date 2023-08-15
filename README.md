@@ -1,3 +1,9 @@
+## Translations
+
+[codemotion translation](https://www.codemotion.com/magazine/frontend/multilingual-site-in-next-js-with-next-i18next/)
+
+## Nextjs
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
