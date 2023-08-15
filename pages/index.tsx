@@ -10,7 +10,7 @@ export default function Home(props: any) {
   const { t } = useTranslation();
   return (
     <main
-      className={`flex min-h-screen flex-col items-center justify-between p-24 ${inter.className}`}
+      className={`flex min-h-screen flex-col items-center justify-between p-24 `}
     >
       <h1>{t("HELLO_WORLD")}</h1>
     </main>
