@@ -5,3 +5,19 @@
 body {
   font-family: "Lato", sans-serif, arial, helvetica;
 }
+
+.imageClass {
+  max-height: 400px;
+  object-fit: contain;
+  width: fit-content;
+  border-radius: 50% 50% 0 0;
+}
+
+@media (min-width: 1024px) {
+  .imageClass {
+    max-height: 900px;
+    object-fit: initial;
+    width: initial;
+    align-self: flex-end;
+  }
+}

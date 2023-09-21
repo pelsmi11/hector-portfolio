@@ -4,6 +4,13 @@ const nextConfig = {
   i18n,
   reactStrictMode: true,
   trailingSlash: true,
+  images: {
+    remotePatterns: [
+      {
+        hostname: "res.cloudinary.com",
+      },
+    ],
+  },
 };
 
 module.exports = nextConfig;

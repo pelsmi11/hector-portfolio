@@ -12,7 +12,12 @@ interface Props {
 const Home: NextPage<Props> = () => {
   return (
     <MainLayout description="Hector Martinez" title="Hector Martinez">
-      <HeroHome />
+      <div
+        className={`flex min-h-screen flex-col items-center gap-8
+        bg-ui-gray-200 overflow-hidden`}
+      >
+        <HeroHome />
+      </div>
     </MainLayout>
   );
 };

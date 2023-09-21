@@ -1,1 +1,6 @@
-{ "HELLO_WORLD": "Hello, World!" }
+{
+  "HELLO_WORLD": "Hello, World!",
+  "HERO": {
+    "I_AM": "I'm Hector Martinez"
+  }
+}
