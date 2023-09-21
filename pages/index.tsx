@@ -1,24 +1,23 @@
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
-import { useTranslation } from "next-i18next";
-import { GetServerSideProps } from "next";
+import { SSRConfig } from "next-i18next";
+import { NextPage, GetStaticProps } from "next";
 import { MainLayout } from "@/src/components";
+import { HeroHome } from "@/src/features/informationHub";
 
-export default function Home(props: any) {
-  console.log(props);
-  const { t } = useTranslation();
-  return (
-    <MainLayout description="Hector Martinez" title="Hector Martinez">
-      <div
-        className={`flex min-h-screen flex-col items-center justify-between p-24 `}
-      >
-        <h1>{t("HELLO_WORLD")}</h1>
-      </div>
-    </MainLayout>
-  );
+interface Props {
+  locale: string;
+  _nextI18Next: SSRConfig;
 }
 
-export const getServerSideProps: GetServerSideProps = async (ctx) => {
-  // extract the locale identifier from the URL
+const Home: NextPage<Props> = () => {
+  return (
+    <MainLayout description="Hector Martinez" title="Hector Martinez">
+      <HeroHome />
+    </MainLayout>
+  );
+};
+
+export const getStaticProps: GetStaticProps = async (ctx) => {
   const { locale } = ctx;
   if (!locale) return { props: {} };
 
@@ -26,7 +25,9 @@ export const getServerSideProps: GetServerSideProps = async (ctx) => {
     props: {
       // pass the translation props to the page component
       locale,
-      ...(await serverSideTranslations(locale)),
+      ...(await serverSideTranslations(locale, ["common"])),
     },
   };
 };
+
+export default Home;
