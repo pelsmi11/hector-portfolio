@@ -1,5 +1,5 @@
 //fameworks imports
-import { FC } from "react";
+import React, { FC } from "react";
 
 //libs imports
 import { CssBaseline, ThemeProvider } from "@mui/material";
@@ -8,7 +8,7 @@ import { CssBaseline, ThemeProvider } from "@mui/material";
 import { lightTheme } from "../theme";
 
 interface Props {
-  children: JSX.Element[] | JSX.Element;
+  children: React.JSX.Element[] | React.JSX.Element;
 }
 
 export const MuiThemeProvider: FC<Props> = ({ children }) => {
