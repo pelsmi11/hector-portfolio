@@ -1,4 +1,11 @@
 export const COLORS_PORTFOLIO = {
+  primary: "#E15B5D",
+  secondary: "#00CECB",
+  black: "#191923",
+  gray: {
+    gray200: "#FCF7FF",
+    gray400: "#C4CAD0",
+  },
   uiPurple: {
     uiPurple500: {
       main: "#732CB1",
