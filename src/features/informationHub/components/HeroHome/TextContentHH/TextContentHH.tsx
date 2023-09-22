@@ -7,10 +7,10 @@ export const TextContentHH = () => {
   return (
     <div className=" lg:w-1/2 flex flex-col items-center lg:items-start">
       <div className="flex flex-col gap-6 text-center lg:text-left ">
-        <h1 className=" text-5xl lg:text-6xl text-ui-primary font-bold">
+        <h1 className=" text-5xl lg:text-6xl text-white font-bold">
           {t("HERO.I_AM")}
         </h1>
-        <p className="font-bold text-2xl lg:text-4xl text-ui-secondary">
+        <p className="font-bold text-2xl lg:text-4xl text-ui-primary">
           {" "}
           {t("HERO.POSITION")}
         </p>
