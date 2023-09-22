@@ -14,7 +14,7 @@ const Home: NextPage<Props> = () => {
     <MainLayout description="Hector Martinez" title="Hector Martinez">
       <div
         className={`flex min-h-screen flex-col items-center gap-8
-        bg-ui-gray-200 overflow-hidden`}
+        bg-ui-gray-200 overflow-hidden `}
       >
         <HeroHome />
       </div>

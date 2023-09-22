@@ -1,6 +1,10 @@
 {
   "HELLO_WORLD": "¡Hola, mundo!",
   "HERO": {
-    "I_AM": "Soy Hector Martinez"
+    "I_AM": "¡Hola, Soy Héctor Martínez!",
+    "POSITION": "Desarrollador Full-Stack",
+    "MESSAGE": "Me especializo en desarrollar soluciones tecnológicas innovadoras, transformando ideas en productos digitales únicos y efectivos.",
+    "DOWNLOAD_CV": "Descarga Mi CV",
+    "CONTACT_ME": "Hablemos"
   }
 }
