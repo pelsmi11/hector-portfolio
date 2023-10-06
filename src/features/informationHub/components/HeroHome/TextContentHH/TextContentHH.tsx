@@ -1,6 +1,8 @@
-import { COLORS_PORTFOLIO } from "@/src/utils/constants";
-import { Button } from "@mui/material";
+import { COLORS_PORTFOLIO, PORTFOLIO_IMAGES } from "@/src/utils/constants";
+import { Button, ButtonBase } from "@mui/material";
 import { useTranslation } from "next-i18next";
+import Image from "next/image";
+import Link from "next/link";
 
 export const TextContentHH = () => {
   const { t } = useTranslation();
@@ -37,6 +39,39 @@ export const TextContentHH = () => {
         >
           {t("HERO.DOWNLOAD_CV")}
         </Button>
+      </div>
+      <div className="mt-8 text-center lg:text-left">
+        <p className="text-white text-xl">{t("HERO.FIND_ME")}</p>
+        <div className="flex gap-6 items-center justify-center lg:justify-start h-[68px] mt-6">
+          <Link
+            href={"https://www.linkedin.com/in/hmartinezm6"}
+            target="_blank"
+          >
+            <ButtonBase>
+              <Image
+                src={PORTFOLIO_IMAGES.hero.networks.linkedin}
+                alt="LinkedIn"
+                height={257}
+                width={820}
+                className=" object-contain w-fit lg:h-16 "
+              />
+            </ButtonBase>
+          </Link>
+          <Link
+            href={"https://www.linkedin.com/in/hmartinezm6"}
+            target="_blank"
+          >
+            <ButtonBase>
+              <Image
+                src={PORTFOLIO_IMAGES.hero.networks.instagram}
+                alt="Instagram"
+                height={317}
+                width={820}
+                className="object-contain w-fit lg:h-16 "
+              />
+            </ButtonBase>
+          </Link>
+        </div>
       </div>
     </div>
   );
