@@ -2,7 +2,7 @@ import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 import { SSRConfig } from "next-i18next";
 import { NextPage, GetStaticProps } from "next";
 import { MainLayout } from "@/src/components";
-import { HeroHome } from "@/src/features/informationHub";
+import { AboutSection, HeroHome } from "@/src/features/informationHub";
 
 interface Props {
   locale: string;
@@ -13,10 +13,10 @@ const Home: NextPage<Props> = () => {
   return (
     <MainLayout description="Hector Martinez" title="Hector Martinez">
       <div
-        className={`flex min-h-screen flex-col items-center gap-8
-        bg-ui-gray-200 overflow-hidden `}
+        className={`flex min-h-screen flex-col items-center overflow-hidden`}
       >
         <HeroHome />
+        <AboutSection />
       </div>
     </MainLayout>
   );

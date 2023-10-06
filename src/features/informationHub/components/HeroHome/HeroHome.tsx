@@ -5,7 +5,7 @@ import { ImageContentHH, TextContentHH } from ".";
 export const HeroHome = () => {
   return (
     <section
-      className={` min-h-[70vh] bg-ui-black w-full relative overflow-hidden`}
+      className={`min-h-[70vh] bg-transparent w-full relative overflow-hidden `}
     >
       <BackgroundParticles />
       <div

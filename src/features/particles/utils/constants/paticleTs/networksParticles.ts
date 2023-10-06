@@ -1,7 +1,16 @@
+import { COLORS_PORTFOLIO } from "@/src/utils/constants";
+
 export const PARTICLE_NETWORK_CONFIG = {
+  background: {
+    color: COLORS_PORTFOLIO.black,
+    image: "",
+    position: "50% 50%",
+    repeat: "no-repeat",
+    size: "cover",
+  },
   fullScreen: {
     enabled: false,
-    zIndex: 1,
+    zIndex: -1,
   },
   particles: {
     number: {
@@ -18,7 +27,7 @@ export const PARTICLE_NETWORK_CONFIG = {
       type: "circle",
       stroke: {
         width: 0,
-        color: "#000000",
+        color: COLORS_PORTFOLIO.black,
       },
       polygon: {
         nb_sides: 5,

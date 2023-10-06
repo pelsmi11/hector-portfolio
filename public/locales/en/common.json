@@ -8,6 +8,11 @@
     "CONTACT_ME": "Let's Talk",
     "FIND_ME": "Alfo find me on:"
   },
+
+  "ABOUT": {
+    "MY_NAME_IS": "My name is ",
+    "NAME": "Hector Martinez!"
+  },
   "FORM": {
     "FORM_SLOGAN": "Raise your projects to new heights?"
   }
