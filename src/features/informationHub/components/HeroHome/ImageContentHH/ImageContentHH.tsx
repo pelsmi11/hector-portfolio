@@ -21,7 +21,7 @@ export const ImageContentHH: FC<Props> = ({ urlImage }) => {
         {/* Para pantallas lg y más grandes */}
         <div className="hidden lg:block">
           <ImagePortrait
-            className="max-h-[900px] object-contain"
+            className="max-h-[800px] object-contain"
             src={urlImage}
           />
         </div>

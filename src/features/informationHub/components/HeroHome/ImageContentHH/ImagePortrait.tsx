@@ -10,7 +10,7 @@ export const ImagePortrait: FC<Props> = ({ src, className }) => {
   return (
     <Image
       src={src}
-      alt="Portrait Photo"
+      alt="Portrait of Hector Martinez web developer"
       width={640}
       height={960}
       className={className}
