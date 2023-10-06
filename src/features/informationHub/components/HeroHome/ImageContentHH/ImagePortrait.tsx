@@ -14,7 +14,7 @@ export const ImagePortrait: FC<Props> = ({ src, className }) => {
       width={640}
       height={960}
       className={className}
-      style={{ borderRadius: "50% 50% 0 0" }}
+      priority
     />
   );
 };
