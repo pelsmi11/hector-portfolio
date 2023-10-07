@@ -10,8 +10,18 @@
   },
 
   "ABOUT": {
-    "MY_NAME_IS": "My name is ",
-    "NAME": "Hector Martinez!"
+    "I_AM": "Hello, I'm a ",
+    "DEVELOPER": "Full-Stack Developer",
+    "ABOUT_BODY_ONE": "As a systems engineer graduate, I've crafted tech solutions for diverse sectors. I've led front-end projects with React.js and Next.js, and delved deep into database optimization, data migration, and ETL process design. Throughout, I've championed innovation, leading tech teams towards excellence.",
+    "ABOUT_BODY_TWO": "Beyond strong technical skills, my holistic development approach stands out. I aim to deeply understand business challenges, and craft impactful solutions. Continual learning is at my core, keeping updated with tech trends. I blend current insights with strategic vision, striving for innovation and pragmatism.",
+    "NAME": "Nombre",
+    "PHONE": "Phone",
+    "EMAIL": "E-mail",
+    "FREELANCE": "FREELANCE",
+    "MY_NAME": "Hector Martínez",
+    "MY_PHONE": "+502 5715 6731",
+    "MY_EMAIL": "hmartinezmoreira81@gmail.com",
+    "MY_FREELANCE": "Available"
   },
   "FORM": {
     "FORM_SLOGAN": "Raise your projects to new heights?"

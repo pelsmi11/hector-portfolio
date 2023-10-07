@@ -9,8 +9,18 @@
     "FIND_ME": "Puedes encontrarme en:"
   },
   "ABOUT": {
-    "MY_NAME_IS": "Mi nombre es ",
-    "NAME": "Hector Martinez!"
+    "I_AM": "Hola, soy un",
+    "DEVELOPER": "Full-Stack Developer",
+    "ABOUT_BODY_ONE": "Graduado en ingeniería de sistemas, he diseñado soluciones tecnológicas para diversos sectores. He liderado proyectos front-end con React.js y Next.js, y me he sumergido en la optimización de bases de datos, migración de datos y diseño de procesos ETL. Siempre he promovido la innovación, liderando equipos técnicos hacia la excelencia.",
+    "ABOUT_BODY_TWO": "Más allá de las habilidades técnicas sólidas, destaco por mi enfoque de desarrollo integral. Busco comprender profundamente los desafíos empresariales y crear soluciones impactantes. El aprendizaje continuo es esencial para mí, manteniéndome actualizado con las tendencias tecnológicas. Combino percepciones actuales con visión estratégica, apuntando a la innovación y pragmatismo.",
+    "NAME": "Nombre",
+    "PHONE": "Teléfono",
+    "EMAIL": "E-mail",
+    "FREELANCE": "FREELANCE",
+    "MY_NAME": "Hector Martínez",
+    "MY_PHONE": "+502 5715 6731",
+    "MY_EMAIL": "hmartinezmoreira81@gmail.com",
+    "MY_FREELANCE": "Disponible"
   },
   "FORM": {
     "FORM_SLOGAN": "Eleva tus proyectos al siguiente nivel"

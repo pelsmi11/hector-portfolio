@@ -1,8 +1,9 @@
-import { COLORS_PORTFOLIO, PORTFOLIO_IMAGES } from "@/src/utils/constants";
-import { Button, ButtonBase } from "@mui/material";
+import { PORTFOLIO_IMAGES } from "@/src/utils/constants";
+import { ButtonBase } from "@mui/material";
 import { useTranslation } from "next-i18next";
 import Image from "next/image";
 import Link from "next/link";
+import { ButtonCV, ButtonContactMe } from "../..";
 
 export const TextContentHH = () => {
   const { t } = useTranslation();
@@ -19,26 +20,8 @@ export const TextContentHH = () => {
         <p className="text-white text-xl"> {t("HERO.MESSAGE")}</p>
       </div>
       <div className="flex gap-4 mt-8">
-        <Button
-          variant="contained"
-          sx={{
-            "&&": {
-              background: COLORS_PORTFOLIO.primary,
-            },
-            textTransform: "none",
-            minWidth: "140px",
-            fontWeight: 700,
-          }}
-        >
-          {t("HERO.CONTACT_ME")}
-        </Button>
-        <Button
-          variant="outlined"
-          color="secondary"
-          sx={{ textTransform: "none", minWidth: "140px", fontWeight: 700 }}
-        >
-          {t("HERO.DOWNLOAD_CV")}
-        </Button>
+        <ButtonContactMe />
+        <ButtonCV />
       </div>
       <div className="mt-8 text-center lg:text-left">
         <p className="text-white text-xl">{t("HERO.FIND_ME")}</p>
