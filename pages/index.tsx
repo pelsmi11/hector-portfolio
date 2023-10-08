@@ -2,7 +2,11 @@ import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 import { SSRConfig } from "next-i18next";
 import { NextPage, GetStaticProps } from "next";
 import { MainLayout } from "@/src/components";
-import { AboutSection, HeroHome } from "@/src/features/informationHub";
+import {
+  AboutSection,
+  ExperienceSection,
+  HeroHome,
+} from "@/src/features/informationHub";
 
 interface Props {
   locale: string;
@@ -17,6 +21,7 @@ const Home: NextPage<Props> = () => {
       >
         <HeroHome />
         <AboutSection />
+        <ExperienceSection />
       </div>
     </MainLayout>
   );

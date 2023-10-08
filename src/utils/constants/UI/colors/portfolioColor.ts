@@ -4,7 +4,8 @@ export const COLORS_PORTFOLIO = {
   black: "#191923",
   gray: {
     gray200: "#FCF7FF",
-    gray400: "#C4CAD0",
+    // gray400: "#C4CAD0",
+    gray400: "#ECEBF3",
   },
   uiPurple: {
     uiPurple500: {
