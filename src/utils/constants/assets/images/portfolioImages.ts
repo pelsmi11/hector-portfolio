@@ -61,4 +61,8 @@ export const PORTFOLIO_IMAGES = {
     angular:
       "https://res.cloudinary.com/du0ivrgj2/image/upload/v1696724883/personal/portfolio/technologies/angular.svg_byjgve.png",
   },
+  proyects: {
+    tesloShop:
+      "https://res.cloudinary.com/du0ivrgj2/image/upload/v1696829417/personal/portfolio/proyects/teslo-shop_zvjtac.png",
+  },
 };

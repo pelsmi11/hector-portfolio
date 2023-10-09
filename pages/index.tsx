@@ -6,6 +6,7 @@ import {
   AboutSection,
   ExperienceSection,
   HeroHome,
+  PortfolioSection,
 } from "@/src/features/informationHub";
 
 interface Props {
@@ -22,6 +23,7 @@ const Home: NextPage<Props> = () => {
         <HeroHome />
         <AboutSection />
         <ExperienceSection />
+        <PortfolioSection />
       </div>
     </MainLayout>
   );
