@@ -22,7 +22,7 @@ export const CustomTimeLineItem: FC<IExperience> = ({
       <TimelineOppositeContent
         sx={{
           flex: "0 1 auto",
-          display: "flex",
+          display: { xs: "none", md: "flex", lg: "none", xl: "flex" },
           alignItems: "center",
           justifyContent: "end",
           minWidth: "175px",
@@ -30,7 +30,6 @@ export const CustomTimeLineItem: FC<IExperience> = ({
         align="right"
         variant="body2"
         color="text.secondary"
-        className="hidden md:flex lg:hidden xl:flex"
       >
         {date}
       </TimelineOppositeContent>

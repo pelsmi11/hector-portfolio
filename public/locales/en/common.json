@@ -23,6 +23,35 @@
     "MY_EMAIL": "hmartinezmoreira81@gmail.com",
     "MY_FREELANCE": "Available"
   },
+  "EXPERIENCE": {
+    "TITLE": "Skills and Experience",
+    "SUBTITLE": "Combining technical abilities with real-world experience",
+    "WORK_EXPERIENCE": "Work Experience",
+    "EDUCATION": "Education",
+    "GENESIS": {
+      "BODY": "Part of the development team, leading front-end solutions with Next.js and React. Supervision of the front-end team, back-end development with Spring Boot and Node.js. Innovator in workflows and database management",
+      "DATE": "Mar 2022 - Present",
+      "TITLE": "Genesis Empresarial Foundation",
+      "JOB_POSITION": "Full-Stack Programming Analyst"
+    },
+    "JES": {
+      "BODY": "Design and implementation of database solutions for the Public Ministry. Development of the new Data Warehouse, leadership in ETL projects, and migration and optimization of databases",
+      "DATE": "Aug 2021 - Mar 2022",
+      "TITLE": "Justice Education Society",
+      "JOB_POSITION": "Database Engineer"
+    },
+    "UNIVERSITY": {
+      "BODY": "Bachelor's in Information Systems and Computer Science",
+      "DATE": "Feb 2016 - Nov 2020",
+      "TITLE": "Mariano Galvez University",
+      "JOB_POSITION": "Graduated"
+    },
+    "HIGH_SCHOOL": {
+      "BODY": "High School Diploma with a focus on Computer Science. Concentration on programming languages and systems",
+      "DATE": "Jan 2014 - Oct 2015",
+      "TITLE": "Liceo Jutiapa"
+    }
+  },
   "FORM": {
     "FORM_SLOGAN": "Raise your projects to new heights?"
   }

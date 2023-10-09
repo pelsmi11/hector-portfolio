@@ -22,6 +22,35 @@
     "MY_EMAIL": "hmartinezmoreira81@gmail.com",
     "MY_FREELANCE": "Disponible"
   },
+  "EXPERIENCE": {
+    "TITLE": "Habilidades y Experiencia",
+    "SUBTITLE": "Combinando habilidades técnicas con experiencia real.",
+    "WORK_EXPERIENCE": "Experiencia Laboral",
+    "EDUCATION": "Educación",
+    "GENESIS": {
+      "BODY": "Parte del equipo de desarrollo, liderando soluciones front-end con Next.js y React. Supervisión del equipo front-end, desarrollo back-end con Spring Boot y Node.js. Innovador en flujos de trabajo y gestión de bases de datos.",
+      "DATE": "Mar 2022 - Actual",
+      "TITLE": "Fundación Génesis Empresarial",
+      "JOB_POSITION": "Analista Programador Full-Stack"
+    },
+    "JES": {
+      "BODY": "Diseño e implementación de soluciones de bases de datos para el Ministerio Público. Desarrollo del nuevo Data Warehouse, liderazgo en proyectos ETL y migración y optimización de bases de datos.",
+      "DATE": "Ago 2021 - Mar 2022",
+      "TITLE": "Justice Education Society",
+      "JOB_POSITION": "Ingeniero de Base de Datos"
+    },
+    "UNIVERSITY": {
+      "BODY": "Ingeniería en sistemas de información y ciencias de la computación",
+      "DATE": "Feb 2016 - Nov 2020",
+      "TITLE": "Universidad Mariano Galvez",
+      "JOB_POSITION": "Graduado"
+    },
+    "HIGH_SCHOOL": {
+      "BODY": "Bachillerato orientado en computación. Enfoque en lenguajes de programación y sistemas.",
+      "DATE": "Ene 2014 - Oct 2015",
+      "TITLE": "Liceo Jutiapa"
+    }
+  },
   "FORM": {
     "FORM_SLOGAN": "Eleva tus proyectos al siguiente nivel"
   }

@@ -4,44 +4,49 @@ import { CardExperience } from ".";
 import { IExperience } from "@/src/interfaces";
 import SchoolIcon from "@mui/icons-material/School";
 import BusinessCenterIcon from "@mui/icons-material/BusinessCenter";
+import { useTranslation } from "next-i18next";
 
 export const ExperienceSection = () => {
+  const { t } = useTranslation();
   const Studies: IExperience[] = [
     {
-      body: "Ingenieria en sistemas",
-      date: "Feb 2016 - Nov 2020",
+      body: t("EXPERIENCE.UNIVERSITY.BODY"),
+      date: t("EXPERIENCE.UNIVERSITY.DATE"),
       icon: <SchoolIcon />,
-      title: "Universidad Mariano Galvez",
-      jobPosition: "Graduado",
+      title: t("EXPERIENCE.UNIVERSITY.TITLE"),
+      jobPosition: t("EXPERIENCE.UNIVERSITY.JOB_POSITION"),
     },
     {
-      body: "Bachillerato en ciencias y letras con orientacion en computación",
-      date: "Ene 2014 - Oct 2015",
+      body: t("EXPERIENCE.HIGH_SCHOOL.BODY"),
+      date: t("EXPERIENCE.HIGH_SCHOOL.DATE"),
       icon: <SchoolIcon />,
-      title: "Liceo jutiapa",
+      title: t("EXPERIENCE.HIGH_SCHOOL.TITLE"),
     },
   ];
 
   const experiences: IExperience[] = [
     {
-      body: "Encargado de la creasion de sistemas web",
-      date: "Mar 2022 - Actual",
+      body: t("EXPERIENCE.GENESIS.BODY"),
+      date: t("EXPERIENCE.GENESIS.DATE"),
       icon: <BusinessCenterIcon />,
-      title: "Funación genesis empresarial",
-      jobPosition: "Analista programador",
+      title: t("EXPERIENCE.GENESIS.TITLE"),
+      jobPosition: t("EXPERIENCE.GENESIS.JOB_POSITION"),
     },
     {
-      body: "Participación del proyecto de creación de Data warehouse",
-      date: "Ago 2021 - Mar 2022",
+      body: t("EXPERIENCE.JES.BODY"),
+      date: t("EXPERIENCE.JES.DATE"),
       icon: <BusinessCenterIcon />,
-      title: "Ministerio Público de astrea",
-      jobPosition: "Ingeniero de Base de datos",
+      title: t("EXPERIENCE.JES.TITLE"),
+      jobPosition: t("EXPERIENCE.JES.JOB_POSITION"),
     },
   ];
   return (
-    <section className="bg-ui-gray-400 w-full py-8 px-6 ">
+    <section className="bg-ui-gray-400 w-full py-8 px-6 min-h-[70vh]">
       <div className="container mx-auto">
-        <p className="text-4xl font-bold">Mis skills</p>
+        <div className="my-4">
+          <h2 className="text-4xl font-bold">{t("EXPERIENCE.TITLE")}</h2>
+          <p className="text-2xl mt-4">{t("EXPERIENCE.SUBTITLE")}</p>
+        </div>
         <CarrouselTechnologies>
           {LEARNED_TECHNOLOGIES.map((technology) => (
             <CardTechnology technology={technology} key={technology.name} />
@@ -49,10 +54,13 @@ export const ExperienceSection = () => {
         </CarrouselTechnologies>
         <div className="py-6 flex flex-wrap gap-6">
           <CardExperience
-            title="Experiencia Laboral"
+            title={t("EXPERIENCE.WORK_EXPERIENCE")}
             experiences={experiences}
           />
-          <CardExperience title="Estudios" experiences={Studies} />
+          <CardExperience
+            title={t("EXPERIENCE.EDUCATION")}
+            experiences={Studies}
+          />
         </div>
       </div>
     </section>
