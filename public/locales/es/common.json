@@ -51,6 +51,12 @@
       "TITLE": "Liceo Jutiapa"
     }
   },
+  "PORTFOLIO": {
+    "BUTTONS": {
+      "LIVE_DEMO": "Demo",
+      "REPOSITORY": "Repositorio"
+    }
+  },
   "FORM": {
     "FORM_SLOGAN": "Eleva tus proyectos al siguiente nivel"
   }

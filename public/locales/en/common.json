@@ -52,6 +52,12 @@
       "TITLE": "Liceo Jutiapa"
     }
   },
+  "PORTFOLIO": {
+    "BUTTONS": {
+      "LIVE_DEMO": "Live Demo",
+      "REPOSITORY": "Repository"
+    }
+  },
   "FORM": {
     "FORM_SLOGAN": "Raise your projects to new heights?"
   }
