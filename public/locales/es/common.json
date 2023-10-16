@@ -55,7 +55,9 @@
     "BUTTONS": {
       "LIVE_DEMO": "Demo",
       "REPOSITORY": "Repositorio"
-    }
+    },
+    "TITLE": "Proyectos Destacados",
+    "DESCRIPTION": "Aquí encontrarás una selección de mis proyectos más recientes y significativos. Cada uno refleja mi pasión por el desarrollo."
   },
   "FORM": {
     "FORM_SLOGAN": "Eleva tus proyectos al siguiente nivel"

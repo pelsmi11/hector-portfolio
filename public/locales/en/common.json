@@ -56,7 +56,9 @@
     "BUTTONS": {
       "LIVE_DEMO": "Live Demo",
       "REPOSITORY": "Repository"
-    }
+    },
+    "TITLE": "Featured Projects",
+    "DESCRIPTION": "Here you'll find a selection of my most recent and significant projects. Each one reflects my passion for development."
   },
   "FORM": {
     "FORM_SLOGAN": "Raise your projects to new heights?"

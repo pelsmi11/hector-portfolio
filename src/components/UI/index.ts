@@ -3,3 +3,4 @@ export * from "./CardTechnology";
 export * from "./CarrouselTechnologies";
 export * from "./CardPortfolio";
 export * from "./icons";
+export * from "./Loader";

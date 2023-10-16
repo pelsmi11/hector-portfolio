@@ -21,3 +21,26 @@ body {
     align-self: flex-end;
   }
 }
+
+.text-shadow {
+  text-shadow: 1px 2px 5px #888888;
+}
+
+.truncate-line-2 {
+  display: -webkit-box;
+  overflow: hidden;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+}
+.truncate-line-3 {
+  display: -webkit-box;
+  overflow: hidden;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+}
+.truncate-line-4 {
+  display: -webkit-box;
+  overflow: hidden;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 4;
+}
