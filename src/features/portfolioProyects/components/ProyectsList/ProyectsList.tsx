@@ -1,9 +1,10 @@
 import React from "react";
-import { useProyect } from "../..";
+import { ButtonCategory, useProyectsData, useProyectsStore } from "../..";
 import { CardPortfolio, DotLoader } from "@/src/components";
 
 export const ProyectsList = () => {
-  const { proyectsQuery } = useProyect();
+  const { proyectsQuery, buttonCategories } = useProyectsData();
+  const { currentProyects } = useProyectsStore();
 
   if (proyectsQuery.isLoading)
     return (
@@ -15,11 +16,25 @@ export const ProyectsList = () => {
   if (proyectsQuery.error) return <p>error</p>;
 
   return (
-    <div className="flex justify-center">
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 place-items-center">
-        {proyectsQuery.data?.data.data.map((proyect) => (
-          <CardPortfolio key={proyect.id} proyect={proyect} />
-        ))}
+    <div>
+      <div className="flex justify-center">
+        <div className="flex overflow-x-auto whitespace-nowrap gap-4 my-6 ">
+          {buttonCategories.map((buttonCategory) => (
+            <ButtonCategory
+              className="flex-shrink-0 px-4"
+              key={buttonCategory.type}
+              category={buttonCategory}
+            />
+          ))}
+        </div>
+      </div>
+
+      <div className="flex justify-center min-h-[60vh]">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 place-items-start ">
+          {currentProyects.map((proyect) => (
+            <CardPortfolio key={proyect.id} proyect={proyect} />
+          ))}
+        </div>
       </div>
     </div>
   );

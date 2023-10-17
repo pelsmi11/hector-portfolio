@@ -4,4 +4,5 @@ export type typeProjectCategory =
   | "promotionAndEvents"
   | "webToolsAndServices"
   | "gamesAndEntertainment"
+  | "all"
   | "clones";

@@ -58,7 +58,16 @@
       "REPOSITORY": "Repository"
     },
     "TITLE": "Featured Projects",
-    "DESCRIPTION": "Here you'll find a selection of my most recent and significant projects. Each one reflects my passion for development."
+    "DESCRIPTION": "Here you'll find a selection of my most recent and significant projects. Each one reflects my passion for development.",
+    "CATEGORIES": {
+      "ALL": "All",
+      "PRODUCTIVITY_APPS": "Productivity Apps",
+      "ECOMMERCE_AND_TRANSACTIONS": "E-commerce and Transactions",
+      "PROMOTION_AND_EVENTS": "Promotion and Events",
+      "WEBTOOLS_AND_SERVICES": "Web Tools and Services",
+      "GAMES_AND_ENTERTAINMENT": "Games and Entertainment",
+      "CLONES": "Clones"
+    }
   },
   "FORM": {
     "FORM_SLOGAN": "Raise your projects to new heights?"
