@@ -4,7 +4,6 @@ import { Button } from "@mui/material";
 import Image from "next/image";
 import { FC, useState } from "react";
 import styles from "./CardPortfolio.module.css";
-// import { useTranslation } from "next-i18next";
 import { GithubIcon, PlayIcon } from "..";
 import { Datum } from "@/src/features/portfolioProyects";
 import Link from "next/link";
@@ -42,10 +41,13 @@ interface Props {
 
 export const CardPortfolio: FC<Props> = ({ proyect }) => {
   const [isFlipped, setIsFlipped] = useState(false);
-  // const { t } = useTranslation();
 
   return (
-    <div
+    <motion.div
+      animate={{ opacity: 1 }}
+      initial={{ opacity: 0 }}
+      exit={{ opacity: 0 }}
+      layout
       className={`w-[370px] h-[250px] relative rounded overflow-hidden cursor-pointer`}
       onClick={() => setIsFlipped((prev) => !prev)}
     >
@@ -82,40 +84,46 @@ export const CardPortfolio: FC<Props> = ({ proyect }) => {
               {proyect.attributes.description}
             </p>
           </div>
-          <div className="flex justify-center gap-4">
-            <Link href={proyect.attributes.urlDemo} target="_blank">
-              <Button
-                variant="contained"
-                sx={{
-                  "&&": {
-                    background: COLORS_PORTFOLIO.primary,
-                  },
-                  textTransform: "none",
-                  minWidth: "140px",
-                  fontWeight: 700,
-                }}
-              >
-                {/* {t("PORTFOLIO.BUTTONS.LIVE_DEMO")} */}
-                <PlayIcon className="h-8 w-8" />
-              </Button>
-            </Link>
-            <Link href={proyect.attributes.urlGithub} target="_blank">
-              <Button
-                variant="outlined"
-                color="secondary"
-                sx={{
-                  textTransform: "none",
-                  minWidth: "140px",
-                  fontWeight: 700,
-                }}
-              >
-                {/* {t("PORTFOLIO.BUTTONS.REPOSITORY")} */}
-                <GithubIcon className="h-8 w-8" />
-              </Button>
-            </Link>
-          </div>
+          {isFlipped && (
+            <motion.div
+              animate={{ opacity: 1 }}
+              initial={{ opacity: 0 }}
+              exit={{ opacity: 0 }}
+              layout
+              className="flex justify-center gap-4"
+            >
+              <Link href={proyect.attributes.urlDemo} target="_blank">
+                <Button
+                  variant="contained"
+                  sx={{
+                    "&&": {
+                      background: COLORS_PORTFOLIO.primary,
+                    },
+                    textTransform: "none",
+                    minWidth: "140px",
+                    fontWeight: 700,
+                  }}
+                >
+                  <PlayIcon className="h-8 w-8" />
+                </Button>
+              </Link>
+              <Link href={proyect.attributes.urlGithub} target="_blank">
+                <Button
+                  variant="outlined"
+                  color="secondary"
+                  sx={{
+                    textTransform: "none",
+                    minWidth: "140px",
+                    fontWeight: 700,
+                  }}
+                >
+                  <GithubIcon className="h-8 w-8" />
+                </Button>
+              </Link>
+            </motion.div>
+          )}
         </div>
       </motion.div>
-    </div>
+    </motion.div>
   );
 };

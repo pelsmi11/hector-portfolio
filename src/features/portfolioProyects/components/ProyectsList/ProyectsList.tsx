@@ -1,6 +1,7 @@
 import React from "react";
 import { ButtonCategory, useProyectsData, useProyectsStore } from "../..";
 import { CardPortfolio, DotLoader } from "@/src/components";
+import { motion } from "framer-motion";
 
 export const ProyectsList = () => {
   const { proyectsQuery, buttonCategories } = useProyectsData();
@@ -30,11 +31,14 @@ export const ProyectsList = () => {
       </div>
 
       <div className="flex justify-center min-h-[60vh]">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 place-items-start ">
+        <motion.div
+          layout
+          className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 place-items-start "
+        >
           {currentProyects.map((proyect) => (
             <CardPortfolio key={proyect.id} proyect={proyect} />
           ))}
-        </div>
+        </motion.div>
       </div>
     </div>
   );
