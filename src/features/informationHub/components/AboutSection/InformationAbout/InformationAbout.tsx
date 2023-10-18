@@ -25,14 +25,20 @@ export const InformationAbout = () => {
         <div className="flex gap-8">
           <p className="w-16 font-bold">{t("ABOUT.PHONE")}</p>
           <p className="font-bold text-base">:</p>
-          <Link href={"tel:+50257156731"}>
+          <Link
+            className="no-underline text-ui-black"
+            href={"tel:+50257156731"}
+          >
             <p>{t("ABOUT.MY_PHONE")}</p>
           </Link>
         </div>
         <div className="flex gap-8">
           <p className="w-16 font-bold">{t("ABOUT.EMAIL")}</p>
           <p className="font-bold text-base">:</p>
-          <Link href={"mailto:hmartinezmoreira81@gmail.com"}>
+          <Link
+            className="no-underline text-ui-black"
+            href={"mailto:hmartinezmoreira81@gmail.com"}
+          >
             <p>{t("ABOUT.MY_EMAIL")}</p>
           </Link>
         </div>
