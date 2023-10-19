@@ -9,6 +9,7 @@ export const ImageAbout = () => {
         src={PORTFOLIO_IMAGES.about.aboutHector}
         width={565}
         height={800}
+        className="w-full object-contain h-fit"
       />
     </div>
   );

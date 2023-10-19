@@ -1,6 +1,7 @@
 .cardContainer {
   perspective: 1000px;
-  width: 370px;
+  width: 100%;
+  max-width: 370px;
   height: 250px;
   position: relative;
   transform-style: preserve-3d; /* Añade esto */

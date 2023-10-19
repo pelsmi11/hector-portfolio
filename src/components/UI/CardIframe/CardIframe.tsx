@@ -12,7 +12,7 @@ export const CardIframe: FC<CardIframeProps> = ({ embedUrl }) => {
       initial={{ opacity: 0 }}
       exit={{ opacity: 0 }}
       style={{
-        height: "370px",
+        height: "320px",
         width: "360px",
         overflow: "hidden",
       }}

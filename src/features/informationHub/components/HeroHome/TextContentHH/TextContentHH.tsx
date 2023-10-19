@@ -27,6 +27,7 @@ export const TextContentHH = () => {
             "NETWORK.WHATSAPP_MESSAGE"
           )}`}
           title="Whatsapp"
+          className="no-underline text-white"
         >
           <ButtonContactMe />
         </Link>
@@ -35,6 +36,7 @@ export const TextContentHH = () => {
           target="_blank"
           href={`https://drive.google.com/file/d/1kCsnlA335ae3cx4uKTL2dBdciLnvJFld/view?usp=share_link`}
           title="CV"
+          className="no-underline text-white"
         >
           <ButtonCV />
         </Link>
@@ -42,36 +44,36 @@ export const TextContentHH = () => {
       <div className="mt-8 text-center lg:text-left">
         <p className="text-white text-xl">{t("HERO.FIND_ME")}</p>
         <div className="flex gap-6 items-center justify-center lg:justify-start h-[68px] mt-6">
-          <Link
-            href={"https://www.linkedin.com/in/hmartinezm6"}
-            target="_blank"
-          >
-            <ButtonBase>
+          <ButtonBase className="w-full lg:w-2/3 2xl:w-1/2 xl:max-w-[300px] ">
+            <Link
+              href={"https://www.linkedin.com/in/hmartinezm6"}
+              target="_blank"
+            >
               <Image
                 src={PORTFOLIO_IMAGES.hero.networks.linkedin}
                 alt="LinkedIn"
                 height={257}
                 width={820}
-                className=" object-contain w-fit lg:h-16 "
+                className="object-contain w-full h-full"
                 priority
               />
-            </ButtonBase>
-          </Link>
-          <Link
-            href={"https://www.linkedin.com/in/hmartinezm6"}
-            target="_blank"
-          >
-            <ButtonBase>
+            </Link>
+          </ButtonBase>
+          <ButtonBase className="w-full lg:w-2/3 2xl:w-1/2 xl:max-w-[300px]">
+            <Link
+              href={"https://www.linkedin.com/in/hmartinezm6"}
+              target="_blank"
+            >
               <Image
                 src={PORTFOLIO_IMAGES.hero.networks.instagram}
                 alt="Instagram"
                 height={317}
                 width={820}
-                className="object-contain w-fit lg:h-16 "
+                className="object-contain w-full h-full"
                 priority
               />
-            </ButtonBase>
-          </Link>
+            </Link>
+          </ButtonBase>
         </div>
       </div>
     </div>

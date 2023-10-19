@@ -50,7 +50,17 @@ export const InformationAbout = () => {
         </div>
       </div>
       <div className="mt-6">
-        <ButtonContactMe />
+        <Link
+          rel="noopener noreferrer"
+          target="_blank"
+          href={`${SOCIAL_NETWORKS.whatsapp}?text=${t(
+            "NETWORK.WHATSAPP_MESSAGE"
+          )}`}
+          title="Whatsapp"
+          className="no-underline text-white"
+        >
+          <ButtonContactMe />
+        </Link>
       </div>
     </div>
   );
