@@ -48,7 +48,7 @@ export const CardPortfolio: FC<Props> = ({ proyect }) => {
       initial={{ opacity: 0 }}
       exit={{ opacity: 0 }}
       layout
-      className={`w-full max-w-[370px] bg-amber-200 h-[250px] relative rounded overflow-hidden cursor-pointer`}
+      className={`w-full max-w-[370px] h-[250px] relative rounded overflow-hidden cursor-pointer`}
       onClick={() => setIsFlipped((prev) => !prev)}
     >
       <motion.div
