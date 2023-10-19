@@ -1,7 +1,7 @@
 //Frameworks imports
 import Head from "next/head";
 import { FC } from "react";
-import { Navbar } from "../..";
+import { Footer, Navbar } from "../..";
 
 //programer imports
 
@@ -34,6 +34,7 @@ export const MainLayout: FC<Props> = ({
       </Head>
       <Navbar />
       <main>{children}</main>
+      <Footer />
     </>
   );
 };

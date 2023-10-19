@@ -1,6 +1,7 @@
 import { useTranslation } from "next-i18next";
 import Link from "next/link";
 import { ButtonContactMe } from "../..";
+import { SOCIAL_NETWORKS } from "@/src/utils/constants";
 
 export const InformationAbout = () => {
   const { t } = useTranslation();
@@ -27,7 +28,7 @@ export const InformationAbout = () => {
           <p className="font-bold text-base">:</p>
           <Link
             className="no-underline text-ui-black"
-            href={"tel:+50257156731"}
+            href={SOCIAL_NETWORKS.phone}
           >
             <p>{t("ABOUT.MY_PHONE")}</p>
           </Link>
@@ -37,7 +38,7 @@ export const InformationAbout = () => {
           <p className="font-bold text-base">:</p>
           <Link
             className="no-underline text-ui-black"
-            href={"mailto:hmartinezmoreira81@gmail.com"}
+            href={SOCIAL_NETWORKS.email}
           >
             <p>{t("ABOUT.MY_EMAIL")}</p>
           </Link>

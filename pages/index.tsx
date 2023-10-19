@@ -4,6 +4,7 @@ import { NextPage, GetStaticProps } from "next";
 import { MainLayout } from "@/src/components";
 import {
   AboutSection,
+  BlogSection,
   ExperienceSection,
   HeroHome,
   PortfolioSection,
@@ -24,6 +25,7 @@ const Home: NextPage<Props> = () => {
         <AboutSection />
         <ExperienceSection />
         <PortfolioSection />
+        <BlogSection />
       </div>
     </MainLayout>
   );

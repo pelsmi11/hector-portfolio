@@ -37,6 +37,7 @@ export const TextContentHH = () => {
                 height={257}
                 width={820}
                 className=" object-contain w-fit lg:h-16 "
+                priority
               />
             </ButtonBase>
           </Link>
@@ -51,6 +52,7 @@ export const TextContentHH = () => {
                 height={317}
                 width={820}
                 className="object-contain w-fit lg:h-16 "
+                priority
               />
             </ButtonBase>
           </Link>
