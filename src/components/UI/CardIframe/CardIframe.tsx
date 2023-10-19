@@ -13,14 +13,15 @@ export const CardIframe: FC<CardIframeProps> = ({ embedUrl }) => {
       exit={{ opacity: 0 }}
       style={{
         height: "320px",
-        maxWidth: "700px",
+        width: "100%",
         overflow: "hidden",
       }}
       className="w-full"
     >
       <iframe
         src={embedUrl}
-        height="320"
+        height="370"
+        width="100%"
         title="integrate post"
         style={{ width: "100%" }}
       ></iframe>
