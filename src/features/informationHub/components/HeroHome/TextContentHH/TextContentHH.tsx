@@ -1,4 +1,4 @@
-import { PORTFOLIO_IMAGES } from "@/src/utils/constants";
+import { PORTFOLIO_IMAGES, SOCIAL_NETWORKS } from "@/src/utils/constants";
 import { ButtonBase } from "@mui/material";
 import { useTranslation } from "next-i18next";
 import Image from "next/image";
@@ -20,8 +20,24 @@ export const TextContentHH = () => {
         <p className="text-white text-xl"> {t("HERO.MESSAGE")}</p>
       </div>
       <div className="flex gap-4 mt-8">
-        <ButtonContactMe />
-        <ButtonCV />
+        <Link
+          rel="noopener noreferrer"
+          target="_blank"
+          href={`${SOCIAL_NETWORKS.whatsapp}?text=${t(
+            "NETWORK.WHATSAPP_MESSAGE"
+          )}`}
+          title="Whatsapp"
+        >
+          <ButtonContactMe />
+        </Link>
+        <Link
+          rel="noopener noreferrer"
+          target="_blank"
+          href={`https://drive.google.com/file/d/1kCsnlA335ae3cx4uKTL2dBdciLnvJFld/view?usp=share_link`}
+          title="CV"
+        >
+          <ButtonCV />
+        </Link>
       </div>
       <div className="mt-8 text-center lg:text-left">
         <p className="text-white text-xl">{t("HERO.FIND_ME")}</p>
