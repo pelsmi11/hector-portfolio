@@ -7,6 +7,7 @@ import {
   AiOutlineMail,
   AiOutlineGithub,
   AiOutlineWhatsApp,
+  AiFillLinkedin,
 } from "react-icons/ai";
 
 export const Footer = () => {
@@ -29,6 +30,15 @@ export const Footer = () => {
               className="flex items-center justify-center w-10 h-10  rounded-full bg-ui-primary"
             >
               <AiOutlineWhatsApp className="text-white h-6 w-6" />
+            </Link>
+            <Link
+              rel="noopener noreferrer"
+              target="_blank"
+              href={SOCIAL_NETWORKS.linkedin}
+              title="Instagram"
+              className="flex items-center justify-center w-10 h-10  rounded-full bg-ui-primary"
+            >
+              <AiFillLinkedin className="text-white h-6 w-6" />
             </Link>
             <Link
               rel="noopener noreferrer"

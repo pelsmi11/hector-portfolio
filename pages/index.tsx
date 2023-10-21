@@ -5,6 +5,7 @@ import { MainLayout } from "@/src/components";
 import {
   AboutSection,
   BlogSection,
+  ContactSection,
   ExperienceSection,
   HeroHome,
   PortfolioSection,
@@ -25,6 +26,7 @@ const Home: NextPage<Props> = () => {
         <AboutSection />
         <ExperienceSection />
         <PortfolioSection />
+        <ContactSection />
         <BlogSection />
       </div>
     </MainLayout>

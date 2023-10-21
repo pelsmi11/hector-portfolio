@@ -45,10 +45,7 @@ export const TextContentHH = () => {
         <p className="text-white text-xl">{t("HERO.FIND_ME")}</p>
         <div className="flex gap-6 items-center justify-center lg:justify-start h-[68px] mt-6">
           <ButtonBase className="w-full lg:w-2/3 2xl:w-1/2 xl:max-w-[300px] ">
-            <Link
-              href={"https://www.linkedin.com/in/hmartinezm6"}
-              target="_blank"
-            >
+            <Link href={SOCIAL_NETWORKS.linkedin} target="_blank">
               <Image
                 src={PORTFOLIO_IMAGES.hero.networks.linkedin}
                 alt="LinkedIn"
@@ -60,10 +57,7 @@ export const TextContentHH = () => {
             </Link>
           </ButtonBase>
           <ButtonBase className="w-full lg:w-2/3 2xl:w-1/2 xl:max-w-[300px]">
-            <Link
-              href={"https://www.linkedin.com/in/hmartinezm6"}
-              target="_blank"
-            >
+            <Link href={SOCIAL_NETWORKS.instagram} target="_blank">
               <Image
                 src={PORTFOLIO_IMAGES.hero.networks.instagram}
                 alt="Instagram"

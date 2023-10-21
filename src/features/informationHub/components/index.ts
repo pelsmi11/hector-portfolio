@@ -4,3 +4,4 @@ export * from "./Buttons";
 export * from "./ExperienceSection";
 export * from "./PortfolioSection";
 export * from "./BlogSection";
+export * from "./ContactSection";
