@@ -74,6 +74,26 @@
   },
   "FORM": {
     "FORM_SLOGAN": "Raise your projects to new heights?",
-    "SOCIAL_MEDIA": "Discover More About Me"
+    "SOCIAL_MEDIA": "Discover More About Me",
+    "VALIDATIONS": {
+      "REQUIRED": "This field is required.",
+      "EMAIL_INVALID": "Invalid email address.",
+      "NAME_INVALID": "Please enter a valid name.",
+      "SUBJECT_INVALID": "Please enter a valid subject.",
+      "MESSAGE_INVALID": "Please enter a valid message."
+    },
+    "LABELS": {
+      "NAME": "Your Name",
+      "EMAIL": "E-mail",
+      "SUBJECT": "Your Subject",
+      "MESSAGE": "Message"
+    },
+    "CONTACT_ME": "Contact me",
+    "BUTTON": "Send Message",
+    "DIVIDER": "OR",
+    "SUBMIT": {
+      "SUCCESS": "Your message has been successfully sent. Thank you for contacting us!",
+      "FAILURE": "There was an error sending your message. Please try again later."
+    }
   }
 }

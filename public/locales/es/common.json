@@ -72,7 +72,27 @@
     "WHATSAPP_MESSAGE": "¡Hola Hector! Estuve navegando por tu portafolio en línea y me gustaría hablar contigo sobre tus proyectos."
   },
   "FORM": {
-    "FORM_SLOGAN": "Eleva tus proyectos al siguiente nivel",
-    "SOCIAL_MEDIA": "Descubre más sobre mí"
+    "FORM_SLOGAN": "¿Lleva tus proyectos a nuevas alturas?",
+    "SOCIAL_MEDIA": "Descubre Más Sobre Mí",
+    "VALIDATIONS": {
+      "REQUIRED": "Este campo es obligatorio.",
+      "EMAIL_INVALID": "Dirección de correo electrónico inválida.",
+      "NAME_INVALID": "Por favor ingresa un nombre válido.",
+      "SUBJECT_INVALID": "Por favor ingresa un asunto válido.",
+      "MESSAGE_INVALID": "Por favor ingresa un mensaje válido."
+    },
+    "LABELS": {
+      "NAME": "Tu Nombre",
+      "EMAIL": "Correo Electrónico",
+      "SUBJECT": "Tu Asunto",
+      "MESSAGE": "Mensaje"
+    },
+    "CONTACT_ME": "Contáctame",
+    "BUTTON": "Enviar Mensaje",
+    "DIVIDER": "O",
+    "SUBMIT": {
+      "SUCCESS": "Tu mensaje ha sido enviado exitosamente. ¡Gracias por contactarnos!",
+      "FAILURE": "Hubo un error al enviar tu mensaje. Por favor, inténtalo de nuevo más tarde."
+    }
   }
 }

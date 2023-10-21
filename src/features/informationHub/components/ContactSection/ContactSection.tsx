@@ -1,6 +1,7 @@
 import React from "react";
-import { NetworksContact } from ".";
+import { FloatingImage, SocialNewtorkContact } from ".";
 import { useTranslation } from "next-i18next";
+import { FormContact } from "@/src/features/FormContact";
 
 export const ContactSection = () => {
   const { t } = useTranslation();
@@ -14,8 +15,16 @@ export const ContactSection = () => {
           {t("FORM.FORM_SLOGAN")}
         </p>
         <div className="flex flex-col lg:flex-row justify-evenly">
-          <NetworksContact />
-          {/* <FormContact /> */}
+          <FloatingImage />
+          <div className="flex flex-col gap-4 lg:w-1/2">
+            <SocialNewtorkContact />
+            <div className="flex justify-center gap-6 items-center py-6">
+              <div className="h-[1px] w-4 bg-ui-black" />
+              <p>{t("FORM.DIVIDER")}</p>
+              <div className="h-[1px] w-4 bg-ui-black" />
+            </div>
+            <FormContact />
+          </div>
         </div>
       </div>
     </section>

@@ -1,3 +1,3 @@
 export * from "./ContactSection";
-export * from "./NetworksContact";
-export * from "./FormContact";
+export * from "./FloatingImage";
+export * from "./SocialNewtorkContact";
