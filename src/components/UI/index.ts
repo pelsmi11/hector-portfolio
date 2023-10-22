@@ -7,3 +7,4 @@ export * from "./Loader";
 export * from "./Footer";
 export * from "./CardIframe";
 export * from "./NetworkIconWithUrl";
+export * from "./SpeedDialNetworks";

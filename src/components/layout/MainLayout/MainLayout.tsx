@@ -1,7 +1,7 @@
 //Frameworks imports
 import Head from "next/head";
 import { FC } from "react";
-import { Footer, Navbar } from "../..";
+import { Footer, Navbar, SpeedDialNetworks } from "../..";
 
 //programer imports
 
@@ -34,6 +34,7 @@ export const MainLayout: FC<Props> = ({
       </Head>
       <Navbar />
       <main>{children}</main>
+      <SpeedDialNetworks />
       <Footer />
     </>
   );
