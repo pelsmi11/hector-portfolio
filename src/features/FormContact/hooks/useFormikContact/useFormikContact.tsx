@@ -1,6 +1,6 @@
 /* eslint-disable no-unused-vars */
 import { useFormik } from "formik";
-import { getValidationSchemaContact } from "../..";
+import { IFormContact, getValidationSchemaContact, sendMail } from "../..";
 
 import { useTranslation } from "next-i18next";
 import { useAlertSnackStore } from "@/src/features/alerts";
@@ -12,19 +12,26 @@ export const useFormikContact = () => {
   const validationSchema = getValidationSchemaContact(t);
   const { handleSendData, handleLoading, handleErrorData } =
     useAlertSnackStore();
+
+  const INITIAL_VALUES_CONTACT: IFormContact = {
+    fullName: "",
+    email: "",
+    subject: "",
+    message: "",
+  };
   const formik = useFormik({
-    initialValues: {
-      fullName: "",
-      email: "",
-      subject: "",
-      message: "",
-    },
+    initialValues: INITIAL_VALUES_CONTACT,
     validationSchema: validationSchema,
-    onSubmit: (values) => {
+    onSubmit: async (values, { resetForm }) => {
       try {
         console.log(values);
+        handleLoading();
+        await sendMail(values);
+        resetForm();
         handleSendData(t("FORM.SUBMIT.SUCCESS"));
+        handleLoading();
       } catch (error) {
+        handleLoading();
         customHandlerError(error, handleErrorData, t);
       }
     },

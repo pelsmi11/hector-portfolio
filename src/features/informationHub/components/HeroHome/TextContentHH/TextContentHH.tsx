@@ -4,6 +4,7 @@ import { useTranslation } from "next-i18next";
 import Image from "next/image";
 import Link from "next/link";
 import { ButtonCV, ButtonContactMe } from "../..";
+import { Link as LinkScroll } from "react-scroll";
 
 export const TextContentHH = () => {
   const { t } = useTranslation();
@@ -20,17 +21,15 @@ export const TextContentHH = () => {
         <p className="text-white text-xl"> {t("HERO.MESSAGE")}</p>
       </div>
       <div className="flex gap-4 mt-8">
-        <Link
-          rel="noopener noreferrer"
-          target="_blank"
-          href={`${SOCIAL_NETWORKS.whatsapp}?text=${t(
-            "NETWORK.WHATSAPP_MESSAGE"
-          )}`}
-          title="Whatsapp"
-          className="no-underline text-white"
+        <LinkScroll
+          activeClass="active"
+          to="contact"
+          spy={true}
+          smooth={true}
+          duration={1000}
         >
           <ButtonContactMe />
-        </Link>
+        </LinkScroll>
         <Link
           rel="noopener noreferrer"
           target="_blank"
