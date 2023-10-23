@@ -7,12 +7,12 @@ export const BlogSection = () => {
     <section className="bg-ui-gray-200 w-full py-8 px-6 min-h-[50vh]">
       <div className="container mx-auto">
         <div className="text-center lg:text-left mt-4 py-6">
-          <h2 className="font-bold text-4xl mb-4">Blog</h2>
+          <h2 className="font-bold text-4xl mb-4 text-center">Blog</h2>
         </div>
         <div className="flex justify-center min-h-[60vh]">
           <motion.div
             layout
-            className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 place-items-start "
+            className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 place-items-center w-full"
           >
             {POSTS.map((post) => (
               <CardIframe key={post} embedUrl={post} />
