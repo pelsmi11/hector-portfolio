@@ -16,6 +16,7 @@ export const CardIframe: FC<CardIframeProps> = ({ embedUrl }) => {
         maxWidth: "700px",
         overflow: "hidden",
       }}
+      className="w-full"
     >
       <iframe
         src={embedUrl}

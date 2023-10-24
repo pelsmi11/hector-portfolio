@@ -20,7 +20,7 @@ export const FloatingImage = () => {
             width={701}
             src={PORTFOLIO_IMAGES.form.floating}
             alt="Raise your projects to new heights?"
-            className="w-full object-contain h-fit"
+            className="w-full object-contain h-fit lg:h-full"
           />
         </motion.div>
       </div>

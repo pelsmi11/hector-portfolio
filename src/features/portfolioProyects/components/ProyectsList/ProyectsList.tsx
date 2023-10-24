@@ -33,7 +33,7 @@ export const ProyectsList = () => {
       <div className="flex justify-center min-h-[60vh] w-ful">
         <motion.div
           layout
-          className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 place-items-center lg:place-items-start w-full"
+          className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 place-items-center w-full"
         >
           {currentProyects.map((proyect) => (
             <CardPortfolio key={proyect.id} proyect={proyect} />
