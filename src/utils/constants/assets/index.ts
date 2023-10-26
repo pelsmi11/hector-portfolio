@@ -1,2 +1,3 @@
 export * from "./images";
 export * from "./post";
+export * from "./favicon";
