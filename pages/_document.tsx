@@ -1,9 +1,20 @@
+import { FAVICONS } from "@/src/utils/constants";
 import { Html, Head, Main, NextScript } from "next/document";
 
 export default function Document() {
   return (
     <Html>
       <Head>
+        {/* Favicons */}
+        {FAVICONS.map((linkProps) => (
+          <link key={linkProps.href} {...linkProps} />
+        ))}
+        {/* Accent color on supported browser */}
+        <meta name="theme-color" content="#E15B5D" />
+        {/* Open Graph */}
+        <meta name="image" property="og:image" content="/images/mini-01.png" />
+        {/* Twitter */}
+        <meta name="twitter:image" content="/images/mini-01.png" />
         {/* lato font */}
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link

@@ -1,4 +1,8 @@
 {
+  "META": {
+    "DESCRIPTION": "Héctor Martínez - Full-Stack Developer specializing in innovative technological solutions, turning ideas into effective digital products. Experience with React.js, Next.js, database optimization, and more.",
+    "KEYWORDS": "Héctor Martínez, Full-Stack Developer, React.js, Next.js, database optimization, data migration, ETL process, front-end projects, technological solutions"
+  },
   "HELLO_WORLD": "Hello, World!",
   "HERO": {
     "I_AM": "Hi, I'm Héctor Martínez!",
