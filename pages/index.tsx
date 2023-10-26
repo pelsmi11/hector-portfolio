@@ -4,7 +4,6 @@ import { NextPage, GetStaticProps } from "next";
 import { MainLayout } from "@/src/components";
 import {
   AboutSection,
-  BlogSection,
   ContactSection,
   ExperienceSection,
   HeroHome,
@@ -32,7 +31,6 @@ const Home: NextPage<Props> = () => {
         <ExperienceSection />
         <PortfolioSection />
         <ContactSection />
-        <BlogSection />
       </div>
     </MainLayout>
   );
