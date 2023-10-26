@@ -27,6 +27,7 @@ export const TextContentHH = () => {
           spy={true}
           smooth={true}
           duration={1000}
+          rel="noopener noreferrer"
         >
           <ButtonContactMe />
         </LinkScroll>
@@ -56,9 +57,9 @@ export const TextContentHH = () => {
             </Link>
           </ButtonBase>
           <ButtonBase className="w-full lg:w-2/3 2xl:w-1/2 xl:max-w-[300px]">
-            <Link href={SOCIAL_NETWORKS.instagram} target="_blank">
+            <Link href={SOCIAL_NETWORKS.github} target="_blank">
               <Image
-                src={PORTFOLIO_IMAGES.hero.networks.instagram}
+                src={PORTFOLIO_IMAGES.hero.networks.githubIcon}
                 alt="Instagram"
                 height={317}
                 width={820}

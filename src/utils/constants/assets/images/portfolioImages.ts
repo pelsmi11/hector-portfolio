@@ -7,6 +7,8 @@ export const PORTFOLIO_IMAGES = {
         "https://res.cloudinary.com/du0ivrgj2/image/upload/v1696568803/personal/portfolio/ig_ecmyul.png",
       linkedin:
         "https://res.cloudinary.com/du0ivrgj2/image/upload/v1696568803/personal/portfolio/lik_dazafc.png",
+      githubIcon:
+        "https://res.cloudinary.com/du0ivrgj2/image/upload/v1698297686/personal/portfolio/github_et7pqs.png",
     },
   },
   about: {
