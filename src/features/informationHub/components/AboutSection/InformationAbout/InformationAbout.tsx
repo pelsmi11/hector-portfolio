@@ -9,7 +9,7 @@ export const InformationAbout = () => {
   return (
     <div className="fex flex-col items-center w-full lg:w-1/2">
       <h2 className="text-3xl">
-        {" " + t("ABOUT.I_AM")}
+        {" " + t("ABOUT.I_AM") + " "}
         <span className="text-ui-primary font-bold">
           {t("ABOUT.DEVELOPER")}
         </span>
